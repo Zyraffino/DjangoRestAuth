@@ -7,6 +7,13 @@ from .serializers import SnippetSerializer, UserSnippetSerializer
 from .models import Snippet
 from scriptmanager.permissions import IsOwnerOrReadOnly
 
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def index(request):
+    return render(request,'scriptmanager/index.html')
+
+
 class UserView(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSnippetSerializer

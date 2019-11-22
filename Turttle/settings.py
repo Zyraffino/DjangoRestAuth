@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'scriptmanager.apps.ScriptmanagerConfig',
-    
+
     'rest_framework',
 ]
 
@@ -55,10 +55,15 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Turttle.urls'
 
+SCRIPTMANAGER_TEMPLATE_DIR = os.path.join(
+    BASE_DIR, 'scriptmanager', 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            SCRIPTMANAGER_TEMPLATE_DIR,
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,4 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/templates/'
+# STATICFILES_DIRS = [
+#     SCRIPTMANAGER_TEMPLATE_DIR
+# ]

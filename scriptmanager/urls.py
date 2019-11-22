@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.urlpatterns import format_suffix_patterns
-from .views import SnippetView, UserView
+from .views import SnippetView, UserView, index
 
 arg_list_view = {
     'post': 'create',
@@ -30,3 +30,7 @@ urlpatterns = format_suffix_patterns([
     path('users/', user_list, name='user_list'),
     path('users/<int:pk>/', user_detail, name='user_detail'),
 ])
+
+urlpatterns += [
+    path('', index, name='scriptmanager'),
+]
