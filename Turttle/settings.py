@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'scriptmanager.apps.ScriptmanagerConfig',
+    'home.apps.HomeConfig',
 
     'rest_framework',
 ]

@@ -21,4 +21,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
 
     path('scriptmanager/', include('scriptmanager.urls')),
+    path('home/', include('home.urls')),
 ]
