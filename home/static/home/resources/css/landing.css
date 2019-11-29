@@ -1,0 +1,16 @@
+.font-context {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: medium;
+  letter-spacing: 1.6px;
+  word-spacing: 1.6px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+.font-logo {
+  font-family: "Pacifico";
+  font-size: larger;
+}
