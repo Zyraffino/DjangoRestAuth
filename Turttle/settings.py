@@ -57,14 +57,15 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Turttle.urls'
 
-SCRIPTMANAGER_TEMPLATE_DIR = os.path.join(
-    BASE_DIR, 'scriptmanager', 'templates')
+BASE_TEMPLATE_DIR = os.path.join(
+    BASE_DIR, 'static', 'templates')
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            SCRIPTMANAGER_TEMPLATE_DIR,
+            BASE_TEMPLATE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
