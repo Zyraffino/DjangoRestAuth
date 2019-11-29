@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
+.hero-background {
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
@@ -42,7 +42,6 @@ header {
   color: #cec7c9;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  font-size: 128px;
 }
 
 .trans-nav {
